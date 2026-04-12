@@ -128,3 +128,10 @@
     @apply font-sans;
   }
 }
+@font-face {
+  font-family: Satoshi;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("../public/Fonts/WEB/fonts/Satoshi-Regular.woff2") format("woff2");
+}
