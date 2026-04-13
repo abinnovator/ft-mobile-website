@@ -1,4 +1,5 @@
 import FeaturesSection from "@/components/FeaturesSection";
+import MobileFeaturesSection from "@/components/MobileFeaturesSection";
 import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -18,7 +19,8 @@ export default function Home() {
       <div className="cursor-pointer flex flex-row gap-10 items-center justify-center pt-10 motion-safe:animate-in motion-safe:fade-in motion-safe:zoom-in-95 motion-safe:duration-700 motion-safe:delay-200 motion-reduce:animate-none">
         <Link href={'/download'}><Button className="border-2 border-gray-400 px-10 py-7 rounded-full cursor-pointer bg-[#338EDA]">Download Now!</Button></Link>
       </div>
-      <FeaturesSection />
+      <div className="hidden md:flex"><FeaturesSection /></div>
+      <div className="flex md:hidden"><MobileFeaturesSection /></div>
     </div>
   );
 }
