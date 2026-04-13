@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className='flex flex-row justify-between items-center px-4 py-4 md:px-12 md:py-7 font-(family-name:--font-satoshi)'>
         <Link href={"/"} className='text-black px-4 py-2 rounded-full cursor-pointer'><h1 className='text-black'>Flavortown Mobile</h1></Link>
-        <Link href={"/download"} className='text-black px-4 py-2 rounded-full cursor-pointer'><Button className='bg-[#338EDA]'>Download Now</Button></Link>
+        <Link href={"/download"} className='text-black px-4 py-2 rounded-full cursor-pointer'><Button className='bg-[#338EDA] cursor-pointer'>Download Now</Button></Link>
     </div>
   )
 }
