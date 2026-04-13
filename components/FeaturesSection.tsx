@@ -75,13 +75,9 @@ const FeatureBlock = ({ feature, onVisible }) => {
   }, [onVisible])
 
   return (
-    <div ref={ref} className='flex flex-col min-h-[50vh] md:min-h-[100vh] py-12 md:py-32 justify-center text-center md:text-start items-center md:items-start'>
+    <div ref={ref} className='flex flex-col min-h-[50vh]  py-12 md:py-32 justify-center text-center md:text-start items-center md:items-start'>
         <h1 className='text-3xl sm:text-4xl md:text-6xl max-w-[650px] leading-tight'>
-          {feature.title.split(',').map((part, i, arr) => (
-            <span key={i}>
-              {i === arr.length - 1 ? <span className='text-[#338EDA]'>{part}</span> : part + (i < arr.length - 1 ? ", " : "")}
-            </span>
-          ))}
+          {feature.title}
         </h1>
         <p className='text-base sm:text-lg md:text-2xl max-w-[717px] mt-6 md:mt-8 text-gray-600'>
           {feature.desc}
